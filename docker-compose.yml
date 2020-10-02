@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+  user-app:
+    container_name: user-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - mongo-db-user
+    ports:
+      - "8080:8080"
+    environment:
+      - NOOP=
+  mongo-db-user:
+    container_name: mongo-db-user
+    image: mongo:3.6
+    ports:
+      - "27017:27017"

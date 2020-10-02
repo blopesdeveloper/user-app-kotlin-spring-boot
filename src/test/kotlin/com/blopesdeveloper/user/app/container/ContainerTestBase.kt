@@ -32,10 +32,4 @@ class ContainerTestBase {
             ).applyTo(configurableApplicationContext.environment)
         }
     }
-
- /*   @DynamicPropertySource
-    fun definepropertySource(registry: DynamicPropertyRegistry){
-        registry.add("spring.data.mongodb.host", mongoDBContainer::getHost)
-        registry.add("spring.data.mongodb.port", mongoDBContainer::getPortBindings)
-    }*/
 }
