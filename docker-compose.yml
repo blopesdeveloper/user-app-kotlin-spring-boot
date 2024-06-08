@@ -1,4 +1,3 @@
-version: '3.4'
 services:
   user-app:
     container_name: user-app
